@@ -7,6 +7,11 @@ trigger: none
 
 pool: default
 
+resources:
+  webhooks:
+    - webhook: test
+      connection: testConnection
+
 steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
