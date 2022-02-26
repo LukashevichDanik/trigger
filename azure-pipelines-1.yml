@@ -15,7 +15,7 @@ resources:
     source: LukashevichDanik.trigger
     trigger: true
   webhooks:
-  - webhook: test
+  - webhook: testWebhook
     connection: testConnection
 
 steps:
