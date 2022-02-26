@@ -14,6 +14,9 @@ resources:
   - pipeline: test
     source: LukashevichDanik.trigger
     trigger: true
+  webhooks:
+  - webhook: test
+    connection: testConnection
 
 steps:
 - script: echo Hello, world!
