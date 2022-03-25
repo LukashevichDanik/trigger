@@ -6,6 +6,11 @@
 trigger: 
 - main
 
+pr:
+ paths:
+   include:
+     - code
+
 pool: default
 
 # resources:
