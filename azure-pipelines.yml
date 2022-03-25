@@ -3,14 +3,15 @@
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
 
-trigger: none
+trigger: 
+- main
 
 pool: default
 
-resources:
-  webhooks:
-    - webhook: test
-      connection: testConnection
+# resources:
+#   webhooks:
+#     - webhook: test
+#       connection: testConnection
 
 steps:
 - script: echo Hello, world!
