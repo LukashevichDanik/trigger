@@ -7,9 +7,12 @@ trigger:
 - main
 
 pr:
- paths:
+ branches:
    include:
-     - code
+     - main
+ paths:
+   exclude:
+     - README.md
 
 pool: default
 
