@@ -14,7 +14,7 @@ pr:
    exclude:
      - README.md
 
-pool: default
+# pool: default
 
 # resources:
 #   webhooks:
