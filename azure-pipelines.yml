@@ -11,14 +11,13 @@ pr:
    include:
      - main
 
-pool:
-  vmImage: ubuntu-latest
+pool: default
 
 # resources:
 #   webhooks:
 #     - webhook: test
 #       connection: testConnection
-
+s
 steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
