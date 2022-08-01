@@ -11,7 +11,8 @@ pr:
    include:
      - main
 
-pool: default
+pool:
+  vmImage: ubuntu-latest
 
 # resources:
 #   webhooks:
