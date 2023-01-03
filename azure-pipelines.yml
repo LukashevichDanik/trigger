@@ -3,8 +3,7 @@
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
 
-trigger: 
-- main
+trigger: none
 
 pr:
  branches:
@@ -13,12 +12,15 @@ pr:
 
 pool: default
 
-# resources:
-#   webhooks:
-#     - webhook: test
-#       connection: testConnection
+resources:
+  repositories:
+  - repository: common
+    type: github
+    name: LukashevichDanik/neutral
+    endpoint: github.com_LukashevichDanik
 
 steps:
+- checkout: common
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
 
