@@ -26,7 +26,7 @@ steps:
     repositoryName: 'LukashevichDanik/trigger'
 - task: GitHubComment@0
   inputs:
-    gitHubConnection: 'MyFirstProject'
+    gitHubConnection: 'github.com_LukashevichDanik1'
     repositoryName: 'LukashevichDanik/trigger'
 - checkout: common
 - script: echo Hello, world!
