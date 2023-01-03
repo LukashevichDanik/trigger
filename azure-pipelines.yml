@@ -23,7 +23,7 @@ steps:
 - task: GitHubComment@0
   inputs:
     gitHubConnection: 'github.com_LukashevichDanik'
-    repositoryName: 'LukashevichDanik/neutral'
+    repositoryName: 'LukashevichDanik/trigger'
 - checkout: common
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
