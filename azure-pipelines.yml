@@ -20,6 +20,10 @@ resources:
     endpoint: github.com_LukashevichDanik
 
 steps:
+- task: GitHubComment@0
+  inputs:
+    gitHubConnection: 'github.com_LukashevichDanik'
+    repositoryName: 'LukashevichDanik/neutral'
 - checkout: common
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
