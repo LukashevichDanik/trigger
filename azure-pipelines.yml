@@ -12,27 +12,37 @@ pr:
 
 pool: default
 
-resources:
-  repositories:
-  - repository: common
-    type: github
-    name: LukashevichDanik/neutral
-    endpoint: github.com_LukashevichDanik
-
 steps:
-- task: GitHubComment@0
-  inputs:
-    gitHubConnection: 'github.com_LukashevichDanik'
-    repositoryName: 'LukashevichDanik/trigger'
-- task: GitHubComment@0
-  inputs:
-    gitHubConnection: 'github.com_LukashevichDanik1'
-    repositoryName: 'LukashevichDanik/trigger'
-- checkout: common
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
+  - script: echo Hello, world!
+    displayName: 'Run a one-line script'
 
-- script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
+  - script: |
+      echo Add other tasks to build, test, and deploy your project.
+      echo See https://aka.ms/yaml
+    displayName: 'Run a multi-line script'
+
+
+# resources:
+#   repositories:
+#   - repository: common
+#     type: github
+#     name: LukashevichDanik/neutral
+#     endpoint: github.com_LukashevichDanik
+
+# steps:
+# - task: GitHubComment@0
+#   inputs:
+#     gitHubConnection: 'github.com_LukashevichDanik'
+#     repositoryName: 'LukashevichDanik/trigger'
+# - task: GitHubComment@0
+#   inputs:
+#     gitHubConnection: 'github.com_LukashevichDanik1'
+#     repositoryName: 'LukashevichDanik/trigger'
+# - checkout: common
+# - script: echo Hello, world!
+#   displayName: 'Run a one-line script'
+
+# - script: |
+#     echo Add other tasks to build, test, and deploy your project.
+#     echo See https://aka.ms/yaml
+#   displayName: 'Run a multi-line script'
